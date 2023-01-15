@@ -20,7 +20,6 @@ const (
 	GraphSaved
 	GraphNotSaved
 	AuthSaved
-	AuthNotSaved
 	UnknownReply
 )
 
