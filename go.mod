@@ -1,4 +1,4 @@
-module commons
+module github.com/OSSIT-Tim1/commons
 
 go 1.19
 
