@@ -10,6 +10,7 @@ const (
 	RollbackProfile
 	RollbackAuth
 	SaveGraph
+	SendConfirmMail
 	UnknownCommand
 )
 
@@ -26,7 +27,6 @@ const (
 type User struct {
 	FullName        string             `validate:"omitempty,fullName" json:"fullName,omitempty"    bson:"fullName,omitempty"`
 	Country         string             `validate:"omitempty,len=2"  json:"country,omitempty"     bson:"country,omitempty"`
-	City            string             `validate:"omitempty,min=3"  json:"city,omitempty"     bson:"city,omitempty"`
 	CompanyName     string             `validate:"omitempty,company"  json:"companyName,omitempty" bson:"companyName,omitempty"`
 	Email           string             `validate:"omitempty,email"    json:"email,omitempty"       bson:"email,omitempty"`
 	Website         string             `validate:"omitempty,url"      json:"website,omitempty"     bson:"website,omitempty"`
