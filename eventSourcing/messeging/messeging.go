@@ -1,4 +1,4 @@
-package saga
+package messeging
 
 type Publisher interface {
 	Publish(message interface{}) error
