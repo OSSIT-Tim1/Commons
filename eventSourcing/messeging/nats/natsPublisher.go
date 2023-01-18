@@ -1,7 +1,7 @@
 package nats
 
 import (
-	saga "github.com/OSSIT-Tim1/commons/eventSourcing/messeging"
+	messeging "github.com/OSSIT-Tim1/commons/eventSourcing/messeging"
 	"github.com/nats-io/nats.go"
 )
 
@@ -10,7 +10,7 @@ type Publisher struct {
 	subject string
 }
 
-func NewNatsPublisher(host, port, user, password, subject string) (saga.Publisher, error) {
+func NewNatsPublisher(host, port, user, password, subject string) (messeging.Publisher, error) {
 	conn, err := getConnection(host, port, user, password)
 	encConn, err := nats.NewEncodedConn(conn, nats.JSON_ENCODER)
 	if err != nil {
