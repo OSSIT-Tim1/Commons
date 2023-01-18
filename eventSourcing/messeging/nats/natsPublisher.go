@@ -1,7 +1,7 @@
 package nats
 
 import (
-	saga "github.com/OSSIT-Tim1/commons/saga/messeging"
+	saga "github.com/OSSIT-Tim1/commons/eventSourcing/messeging"
 	"github.com/nats-io/nats.go"
 )
 
