@@ -10,7 +10,7 @@ const (
 
 type Event struct {
 	Type EventType
-	Data interface{}
+	Data []byte
 }
 
 type EventType int8
