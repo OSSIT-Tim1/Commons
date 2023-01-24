@@ -6,6 +6,7 @@ const (
 	LikeRemoved
 	ProfileVisited
 	AdvertisementWatched
+	ReportGenerated
 )
 
 type Event struct {
