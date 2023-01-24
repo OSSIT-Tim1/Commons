@@ -1,7 +1,7 @@
 package advertisemants
 
 const (
-	AdvertisementPosted EventType = iota
+	AdvertisementPosted int = iota
 	LikeAdded
 	LikeRemoved
 	ProfileVisited
@@ -10,8 +10,8 @@ const (
 )
 
 type Event struct {
-	Type EventType `json:"type"`
-	Data []byte    `json:"data"`
+	Type int    `json:"type"`
+	Data []byte `json:"data"`
 }
 
 type EventType int
