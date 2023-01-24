@@ -10,8 +10,8 @@ const (
 )
 
 type Event struct {
-	Type EventType
-	Data []byte
+	Type EventType `json:"type"`
+	Data []byte    `json:"data"`
 }
 
-type EventType int8
+type EventType int
